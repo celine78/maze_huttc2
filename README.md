@@ -1,8 +1,8 @@
-#Project for the Module BTI7541a Python <br>
-###Semester Spring 2021
-####Made by Céline Hüttenmoser (HUTTC2) at the BFH.
+# Project for the Module BTI7541a Python <br>
+### Semester Spring 2021
+#### Made by Céline Hüttenmoser (HUTTC2) at the BFH.
 
-####Mazes
+#### Mazes
 In this project, a maze can be read from a text file. 
 The program will search for the path from a starting point A to an end point B.<br>
 At the end, the maze will be printed showing the path with the coordinates.<br>
