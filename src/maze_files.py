@@ -1,9 +1,8 @@
 from typing import Tuple
 import numpy as np
-import sys
 
 
-class Maze:
+class MazeFiles:
     """
     The maze class reads a maze from a file and prints a path from a starting point A to an end point B.
     When no path can be found or if there are cycles, the user will be informed.
@@ -42,7 +41,7 @@ class Maze:
         :return: Numpy array
         """
         try:
-            with open(sys.argv[1]) as f:
+            with open(filename) as f:
                 lines = f.readlines()
                 new_maze = []
                 for line in lines:
@@ -197,6 +196,7 @@ class Maze:
         """
         try:
             # temporarily allow more recursions to avoid a stack overflow error
+            import sys
             sys.setrecursionlimit(10000)
 
             self.maze_array = maze_array
@@ -279,6 +279,6 @@ class Maze:
 
 
 if __name__ == '__main__':
-    maze = Maze()
+    maze = MazeFiles()
     converted_maze = maze.read_file('../maze-cycle.txt')
     maze.maze_path(converted_maze)
