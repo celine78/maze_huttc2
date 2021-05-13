@@ -35,13 +35,13 @@ class Maze:
         except Exception as e:
             print('Error occurred during the initialization: ', e)
 
-    def read_file(self, filename) -> np.ndarray:
+    def read_file(self) -> np.ndarray:
         """
         Reading of the text file from the console and converting the maze into a Numpy array of integers
         :return: Numpy array
         """
         try:
-            with open(filename) as f:
+            with open(sys.argv[1]) as f:
                 lines = f.readlines()
                 new_maze = np.zeros((0, 65), dtype=int)
                 for line in lines:
@@ -265,5 +265,5 @@ class Maze:
 
 if __name__ == '__main__':
     maze = Maze()
-    converted_maze = maze.read_file('maze-cycle.txt')
+    converted_maze = maze.read_file()
     maze.maze_path(converted_maze)

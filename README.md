@@ -19,8 +19,8 @@ The encoding is as follows:<br>
 5: 'N',  # north
 6: 'E',  # east
 7: 'W',  # west
-9: ' ',  # returned
-10: ' ',  # cycle
+9: 'R',  # returned
+10: 'C',  # cycle
 ```
 
 #### Starting the program
