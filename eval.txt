@@ -1,0 +1,32 @@
+Dear all
+
+Here are some short comments about my evaluation of your project "Maze".  As usual, my comments are short
+but you know that I am always available to provide more information if you do not agree with my marking.
+Do not hesitate to contact me if something is not clear for you.
+
+Cheers
+Olivier Biberstein
+
+
+Evaluation Criteria
+
+Points   
+
+1        Use of Python 3.8
+1        GitLab invitation with maintainer rights
+1        Name of the project on GitLab as "maze_yourabbreviation1_yourabbreviation2"
+2        Use of Numpy module for representing the maze as a 2-dimentional array
+1        Use of the encoding of walls, start/goal points as in the proposal
+10       Implementation of the algorithm to find a path in the maze
+1        Comments in the code that explain the functioning of the algorithm and the code in general
+1        The type of all the functions all the methods must be provided (make use of mypy)
+(-1) not all the parameters, return values are typed.
+2        Invocation of the python program from command line for the maze provided in the text file "maze-one.txt"
+2        Printing the path as a string using the four letters 'N',  'S', 'W', and 'E'.
+2        Printing the maze with the path directly on it with the four letters 'N', 'S', 'W', and 'E' as illustrated in the proposal
+1        The path (solution) is the correct one
+
+
+Very good project, no more comments.
+
+(-1)     Total 24/25pt
